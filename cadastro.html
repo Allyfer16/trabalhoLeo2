@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CADASTRO</title>
+    <link rel="stylesheet"  href="css/estilo.css"> 
+    <script src="javaScript/Javascript.js"></script>
+</head>
+
+<body id="body">
+     <main>
+          <form method="post" action="cadastrar.php" onsubmit="return ( verifica() )" name="frmEnvia">
+    <div class="content">
+        <h4>CADASTRO</h4>
+    <p>
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" onblur="checarEmail();" placeholder="seuemail@email.com">
+    </p>
+
+    <p>
+        <label>Nome do Usuario</label>
+        <input type="text" name="usuario">
+    </p>
+
+    <p>
+        <label>Senha</label>
+        <input type="password" name="senha">
+    </p>
+
+    <p>
+        <label>CPF</label>
+        <input type="number" name="CPF">
+    </p>
+
+    <p>
+        <label>Data de Nacimento</label>
+        <input type="number" name="nacimento">
+    </p>
+
+    <p>
+        <label>Celular</label>
+        <input type="number" name="celular">
+    </p>
+
+    <p>
+        <input type="submit" name="cadastrar" value="cadastrar">
+    </p>
+        </form>
+     <main>
+    </div>
+</body>
+</html>
